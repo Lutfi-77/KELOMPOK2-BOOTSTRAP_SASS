@@ -1,0 +1,133 @@
+@use "aboutColor";
+@import "AboutTitle";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$margin-top: 160px;
+$primary-color: #fce4cf;
+$useHoverEffect: true; // var hover
+
+// Deklarasi fungsi dengan @function
+@function calculateMaxHeight($originalHeight) {
+  
+  @return $originalHeight * 1.5;
+}
+
+// Menggunakan fungsi untuk menghitung nilai $max-height
+$max-height: calculateMaxHeight(200px);
+
+body {
+  $primaryFont: 'Roboto', sans-serif;
+  font-family: $primaryFont;
+}
+#aboutUsPartial,
+#storyPartial {
+  text-align: justify;
+  max-height: $max-height;
+  overflow: hidden;
+}
+
+#about {
+  margin-top: $margin-top;
+}
+
+#story {
+  margin-top: 50px;
+  background-color: $primary-color;
+}
+
+#value {
+  margin-top: 50px;
+}
+
+// #aboutUsPartial,
+// #storyPartial {
+//   text-align: justify;
+//   max-height: $max-height;
+//   overflow: hidden;
+// }
+
+#aboutUsFull,
+#storyFull {
+  text-align: justify;
+  display: none;
+}
+
+
+// percabangan
+  @if $useHoverEffect {
+    #button2,
+    #button1 {
+      color : blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+
+img {
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.saru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    border: none; // Hapus border
+    img {
+      border-radius: 0; // Hilangkan border-radius
+    }
+  }
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+
+#ig {
+  width:100px;
+  height: auto;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+// perulangan
+$elements: 'tt', 'shopee';
+
+@each $element in $elements {
+  ##{$element} {
+    width: 85px;
+    height: auto;
+    padding: 10px;
+    margin-left: 15px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: $title-size;
+  color: aboutColor.$colors;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+#Available {
+  background-color: #dc32e2;
+}
+
+#faq {
+  $primary-color: #dc32e2;
+  background-color: $primary-color;
+}
+
+.widget {
+  margin-top: 20px;
+}

@@ -1,0 +1,95 @@
+@use "KatalogColor";
+@import "KatalogUkuran";
+
+// Variabel Global
+$global-background-color: #f4f4f4;
+$global-navbar-background-color: #fff;
+$global-card-border: none;
+$global-card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$global-filter-background-color: #fce4fc;
+$global-footer-color: #fff;
+
+// Variabel Skor
+$score: 20;
+
+// Fungsi untuk menghitung padding berdasarkan skor
+@function calculate-padding($score) {
+  @return #{$score}px;
+}
+
+// Fungsi untuk menghitung margin berdasarkan skor
+@function calculate-margin($score) {
+  @return #{$score / 2}px;
+}
+
+// Fungsi untuk menghasilkan warna lebih gelap
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+// Fungsi untuk menghasilkan warna lebih terang
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Penggunaan variabel dan fungsi di dalam elemen-elemen CSS
+body {
+  background-color: $global-background-color;
+}
+
+.navbar {
+  background-color: $global-navbar-background-color;
+}
+
+.card {
+  border: $global-card-border;
+  box-shadow: $global-card-box-shadow;
+}
+
+.filter {
+  background-color: $global-filter-background-color;
+  padding: calculate-padding($score); // Menggunakan fungsi calculate-padding
+  margin: calculate-margin($score); // Menggunakan fungsi calculate-margin
+  color: darken-color(
+    $global-footer-color,
+    10%
+  ); // Menggunakan fungsi darken-color
+}
+
+footer {
+  color: lighten-color(
+    $global-footer-color,
+    10%
+  ); // Menggunakan fungsi lighten-color
+}
+
+// Menggunakan variabel dari modul KatalogColor
+.some-element {
+  background-color: KatalogColor.$primary-color;
+  color: KatalogColor.$secondary-color;
+}
+
+// Menggunakan variabel dari modul KatalogUkuran
+.another-element {
+  font-size: KatalogUkuran.$font-size-large;
+}
+
+// Contoh perulangan menggunakan @for
+@for $i from 1 through 5 {
+  .element-#{$i} {
+    font-size: 10px + $i * 2;
+  }
+}
+
+// Contoh kondisi menggunakan @if
+$show-border: true;
+
+@if $show-border {
+  .element-with-border {
+    border: 1px solid #000;
+  }
+} @else {
+  .element-no-border {
+    border: none;
+  }
+}

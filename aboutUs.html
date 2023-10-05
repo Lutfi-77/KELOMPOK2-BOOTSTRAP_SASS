@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf3185087.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/template.js"></script>
+    <style>
+      .logo-header {
+        width: 25px;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        padding: 10px 0;
+      }
+
+      /* .nav-link {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+      } */
+
+      .nav-link a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+      }
+
+      .saru {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #button1 #button :hover {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <!-- About Us start-->
+    <section class="container" id="about" style="margin-top: 160px">
+      <div class="row">
+        <div class="col-12 col-md-4 aboutus-img">
+          <img
+            src="https://i.pinimg.com/736x/cc/53/b2/cc53b27699a7d89303f00dbf77ab066a.jpg"
+            alt="buckets"
+            class="w-100"
+          />
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>About Us</h2>
+          <div id="aboutUsPartial">
+            <!-- Hanya sebagian teks yang ditampilkan awalnya -->
+            MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
+            Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
+            pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
+            kreatif dan inovatif serta menyediakan pelayanan yang baik dan
+            ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
+            seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
+            Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
+            pengiriman tepat waktu dengan harga yang kompetitif.
+          </div>
+          <div id="aboutUsFull">
+            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
+            MahirCraft.id selalu berusaha memberikan kepuasan pelanggan dengan
+            memberikan yang terbaik dari pilihan bunga yang digunakan.
+            MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
+            Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
+            pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
+            kreatif dan inovatif serta menyediakan pelayanan yang baik dan
+            ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
+            seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
+            Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
+            pengiriman tepat waktu dengan harga yang kompetitif. MahirCraft.id
+            selalu berusaha memberikan kepuasan pelanggan dengan memberikan yang
+            terbaik dari pilihan bunga yang digunakan. Para pelanggan kami bisa
+            memilih dari berbagai pilihan buket yang tersedia, dari buket untuk
+            acara pernikahan, anniversary, ulang tahun, atau bahkan untuk kado
+            kejutan terhadap orang tersayang. Kami juga senantiasa memperbarui
+            pilihan-pilihan bunga, dan mengikuti tren terbaru dalam dunia
+            dekorasi dengan bunga. Kesempurnaan dalam pelayanan serta kepuasan
+            pelanggan adalah prioritas utama bagi kami di MahirCraft.id. Kami
+            menantikan untuk melayani kebutuhan buket yang Anda butuhkan. Terima
+            kasih telah mempercayakan MahirCraft.id sebagai pilihan Anda.
+          </div>
+          <a id="button2" onclick="showFullText()">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+    <!-- ABout Us end -->
+
+    <!-- Story Start -->
+    <section class="container" id="story">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img
+            src="./assets/img/logoMacraft.png"
+            alt="buckets"
+            class="w-100"
+            style="padding: 20px"
+          />
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Story</h2>
+          <div id="storyPartial">
+            <!-- Hanya sebagian teks yang ditampilkan awalnya -->
+            MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
+            senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
+            dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
+            MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
+            nasional. Kami selalu berkomitmen memberikan kreasi bunga
+            berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
+            di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
+            melalui cinta dan dedikasi kami pada bunga dalam acara penting
+            pelanggan kami.
+          </div>
+          <div id="storyFull">
+            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
+            MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
+            senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
+            dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
+            MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
+            nasional. Kami selalu berkomitmen memberikan kreasi bunga
+            berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
+            di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
+            melalui cinta dan dedikasi kami pada bunga dalam acara penting
+            pelanggan kami. Dalam perjalanan kami, setiap buket yang kami
+            ciptakan selalu memperhatikan detail estetika dan tata letak bunga
+            agar terlihat cantik saat difoto. Kami percaya bahwa keindahan bunga
+            tidak hanya hadir dalam bentuk fisiknya, tetapi juga dalam
+            pengalaman yang dapat mereka hadirkan bagi pelanggan kami.
+            Kepercayaan yang terus tumbuh dari pelanggan merupakan landasan
+            utama bagi MahirCraft.id. Ini mendorong kami untuk terus
+            mengembangkan kemampuan kami dan memberikan pelayanan yang lebih
+            baik. Kami selalu berupaya untuk menjadi bagian dari momen-momen
+            berharga dalam hidup pelanggan kami, seperti pernikahan, acara
+            kondangan, atau ulang tahun. Dengan semangat ini, kami berkomitmen
+            untuk terus memberikan yang terbaik dalam dunia bunga dan dekorasi.
+          </div>
+          <a id="button1" onclick="showFullStory()">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+    <!-- story End -->
+
+    <!-- Value Start -->
+    <section class="container" id="value">
+      <h2>Our values</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card border-dark mb-3" style="max-width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="https://img.freepik.com/free-vector/organic-flat-feedback-concept-illustrated_23-2148951369.jpg?t=st=1695219020~exp=1695219620~hmac=11f3467487463783bf43228f6a1177c2fa7d22bd1b73d2415c872459207d4513"
+                  alt=""
+                />Customer Satisfaction
+              </h5>
+              <p class="card-text">
+                Kepuasan pelanggan adalah tujuan kami. kami berusaha untuk ramah
+                dan memproses pesanan pelanggan dengan cepat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border-dark mb-3" style="max-width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="https://img.freepik.com/free-vector/cute-male-courier-delivery-package-with-motorcycle-cartoon-vector-icon-illustration-people-job_138676-5708.jpg?size=626&ext=jpg&uid=R58077014&semt=sph"
+                  alt=""
+                />Delivery Safety
+              </h5>
+              <p class="card-text">
+                Kami memiliki beberapa kerja sama dengan layanan jasa kirim yang
+                ada di Indonesia, jadi pengiriman bisa lebih aman.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border-dark mb-3" style="max-width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="https://img.freepik.com/free-vector/get-touch-concept-illustration_114360-2726.jpg?size=626&ext=jpg&uid=R58077014&semt=ais"
+                  alt=""
+                />Custom Request
+              </h5>
+              <p class="card-text">
+                Customer bebas Request, tersedia berbagai macam ornament, semua
+                kebutuhan bouquet bisa kami penuhi dengan maksimal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Values -->
+
+    <!-- Start Faq -->
+    <section class="container mt-5" #faq>
+      <h2>FaQ</h2>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Kenapa Memilih MahirCraft.id ?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">Karena Harga Terjangkau</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Metode Pembayaran apa saja yang tersedia ?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">Dana, BCA, Shopeepay & QRIS</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Apakah ada diskon atau penawaran Khusus ?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Ya, setiap pembelian 10 pcs akan mendapatkan penawaran khusus
+              berupa harga
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Bagaimana Customer dapa menghubungi tim dukungan teknis ?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Anda bisa menghubungi kami melalui Contact Us.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end faq -->
+
+    <!-- start e-comerce -->
+    <section class="container mb-5 mt-5" id="Available">
+      <h2>Available On</h2>
+      <div class="container saru">
+        <div class="row">
+          <!-- Tambahkan class justify-content-center untuk membuat kartu berada di tengah -->
+          <div class="col-6 col-md-4">
+            <div class="card" style="margin-bottom: 10px">
+              <img
+                id="shopee"
+                src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo-0.png"
+                class="card-img-top"
+                alt="Shopee"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card" style="margin-bottom: 10px">
+              <img
+                id="tt"
+                src="https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg?t=o&v=770"
+                class="card-img-top"
+                alt="Tiktok Shop"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img
+                id="ig"
+                src="./assets/img/igAbout.png"
+                class="card-img-top"
+                alt="Instagram"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="findus">
+      <h2>Find Us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.16546077267!2d111.86486767426358!3d-8.186081582075712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e1d6f132cd01%3A0x4e6981db23ed137f!2sALSA%20TRANS!5e0!3m2!1sid!2sid!4v1685933205989!5m2!1sid!2sid"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="container">
+        <div class="row">
+          <div class="span8"></div>
+          <div class="span4">
+            <div class="clearfix"></div>
+            <aside class="right-sidebar">
+              <div class="widget">
+                <h5 class="widgetheading">Contact information<span></span></h5>
+
+                <ul class="contact-info">
+                  <li>
+                    <label>Address :</label> Dusun Bakalan, Desa Tenggarejo,
+                    Kec. Tanggunggunung, Kabupaten Tulungagung<br />
+                    Jawa Timur - Indonesia
+                  </li>
+                  <li><label>Phone :</label>+62 123 456 78 / +62 123 456 79</li>
+                  <li><label>Fax : </label>+62 123 456 10 / +62 123 456 11</li>
+                  <li><label>Email : </label> admin@unpkediriac.id</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer bg-dark text-light"></div>
+    <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      var aboutUsPartial = document.getElementById('aboutUsPartial');
+      var aboutUsFull = document.getElementById('aboutUsFull');
+      var showFullTextButton = document.getElementById('button2');
+
+      function showFullText() {
+        aboutUsPartial.style.display = 'none';
+        aboutUsFull.style.display = 'block';
+        showFullTextButton.style.display = 'none';
+      }
+
+      var storyPartial = document.getElementById('storyPartial');
+      var storyFull = document.getElementById('storyFull');
+      var showFullStoryButton = document.getElementById('button1');
+
+      function showFullStory() {
+        storyPartial.style.display = 'none';
+        storyFull.style.display = 'block';
+        showFullStoryButton.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
